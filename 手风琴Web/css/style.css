@@ -1,0 +1,60 @@
+html,body,nav {
+	margin     : 0;
+	height: 100%;
+	box-sizing : border-box;
+	background : #333;
+	font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+	background-image: url(../img/bg_lavender.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+h3 {
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+.nav__box{
+	height: 100%;
+}
+.nav__bar {
+	float: left;
+	width  : 50px;
+	height: 100%;
+}
+
+.tabsnav__title{
+	position: relative;
+	cursor: pointer;
+	margin: 0;
+	height: 100%;
+	font-weight: normal;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	transform: rotate(-90deg);
+	color: #fff;
+}
+
+/* .tabsnav__item {
+	height: 50px;
+	position: relative;
+	cursor: pointer;
+} */
+
+.tabsnav__bar {
+	background: currentColor;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	pointer-events: none;
+}

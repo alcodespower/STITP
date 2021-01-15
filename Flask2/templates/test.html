@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="../static/js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="main" style="width: 37.5rem;height: 50rem;">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		let etext = echarts.init(document.getElementById("main"));
+		let option = {
+			xAxis: {
+				type: 'category',
+				data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+			},
+			yAxis: {
+				type: 'value'
+			},
+			series: [{
+				data: [820, 932, 901, 934, 1290, 1330, 1320],
+				type: 'line'
+			}]
+		};
+		etext.setOption(option)
+	</script>
+</html>
